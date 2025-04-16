@@ -479,8 +479,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .bio{
   position: relative;
-  top:-110px;
-  left:-60px;
+  top:-80px;
 }
 @media (max-width:992px) {
   #hero .bio {
@@ -557,13 +556,58 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .play-btn {
-  width: 500px;
-  
+  width: 100%;
   display: block;
   position: relative;
   overflow: hidden;
   border-radius: 30px;
 }
+/* video section */
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.imgbody {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.playbtnimg {
+  width: 60px;
+  height: 60px;
+}
+
+.playbtnbody {
+  display: none; /* Hide video initially */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+.cross{
+  position: absolute;
+  top: -8px;
+  right: 2px;
+  font-size: 30px;
+  font-weight: bold;
+  color: red;
+  z-index: 5;
+  cursor: pointer;
+
+}
+.video-element {
+  width: 100%;
+  height: auto;
+}
+
+/* video section end */
 
 #hero .play-btn::after {
   content: '';

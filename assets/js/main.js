@@ -279,10 +279,29 @@
     console.log(this.window.background)
   })
 
+  // video player
 
+const playButtonImg = document.querySelector(".playbtnimg");
+const imgbody = document.querySelector('.imgbody');
+const videoContainer = document.querySelector(".playbtnbody");
+const video = videoContainer.querySelector("video");
+const cross = document.querySelector(".cross");
+
+playButtonImg.addEventListener("click", function () {
+  // Hide the play button image
+  imgbody.style.display = "none";
+
+  // Show video container and play video
+  videoContainer.style.display = "flex";
+  video.play();
+});
+cross.addEventListener("click",function(){
+  videoContainer.style.display = "none";
+  imgbody.style.display = "block";
+  video.pause()
+})
 
   
-
 
 
 })()
